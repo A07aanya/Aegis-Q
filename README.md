@@ -1,64 +1,49 @@
 # Aegis-Q
 
-Aegis-Q: Quantum-Resistant Robotic Firewall
-Securing India's Critical Infrastructure with Autonomous AI and Post-Quantum Defense
+Aegis-Q: Sovereign Cyber-Resilience Framework
+Project Overview
+Aegis-Q is a 2026-ready autonomous cyber-resilience dashboard designed to protect critical national infrastructure such as Healthcare, Agriculture, and Urban Systems. Unlike traditional reactive security, Aegis-Q focuses on Resilience—the ability to identify threats, isolate breaches using Post-Quantum Cryptography, and self-heal via the Lazarus Protocol.
 
+Key Features
+1. Neural Sentinel (AI Ensemble): Real-time anomaly detection using Isolation Forest logic to detect Zero-Day attacks.
+2. Lattice Barrier (PQC): Quantum-safe data protection using NIST FIPS 203 (Kyber-768) standards.
+3. Lazarus Protocol: Automated system re-imaging to restore integrity in seconds (Self-Healing).
+4. Ghost Ledger: An immutable audit trail powered by private blockchain and SHA-256 hashing for CIRCIA 2026 compliance.
 
+Tech Stack
+1. Frontend: React.js, Tailwind CSS (for the Cyber-Hacker UI aesthetic)
+2. Icons: Lucide-React
+3. State Management: React Hooks
+4. Deployment: Vite (Build Tool)
 
-Overview:
+Setup and Installation
+Follow these steps to run the Aegis-Q Dashboard locally on your machine.
 
-Aegis-Q is a next-generation, cloud-native security platform designed to transition national digital defense from reactive to autonomous. While traditional firewalls rely on static signatures and human intervention, Aegis-Q leverages Self-Learning AI to predict zero-day threats and Post-Quantum Cryptography (PQC) to future-proof data against quantum decryption.
+1. Prerequisites
+Node.js (v18 or higher)
+npm (v9 or higher)
 
-Built for high-stakes environments like Healthcare (Ayushman Bharat Digital Mission), Agriculture, and Smart Cities, Aegis-Q acts as a digital immune system that self-heals in real-time.                                                            
+Installation Steps
+1. Clone the repository: git clone <your-repo-link> cd aegis-q-dashboard
+2. Install dependencies: npm install
+3. Initialize Tailwind CSS: npx tailwindcss init -p
+4. Run the development server: npm run dev
+5. Open your browser: Navigate to http://localhost:5173
 
+Environment Variables and Credentials
+Environment Variables: This prototype runs entirely client-side for simulation purposes. No .env file is required for the basic dashboard.
 
-Key Features:                                                                                                                                                        
-1.Autonomous Self-Learning AI: Uses Deep Anomaly Detection to identify Machine-Speed attacks before they breach the perimeter.     
-2.Quantum-Resistant Encryption: Implements Lattice-based cryptography (CRYSTALS-Kyber) to ensure data remains unhackable in the next decade.        
-3.Robotic Self-Healing: Automated micro-segmentation and container-level restoration via Kubernetes to ensure zero downtime.         
-4.Immutable Audit Trail: Blockchain-based logging ensures that all security events are tamper-proof and legally non-repudiable.       
-5.Modular Edge-Agent Architecture: Lightweight Go-based agents provide scalable protection from 5G urban centers to rural IoT networks.      
+Test Login Credentials:
 
+Username: admin_aegis
+Password: quantum_2026 (Note: This is a simulation credential for UI bypass)
 
+Basic Error Handling
+1. Port Conflict: If 5173 is in use, Vite will automatically assign a different port. Check the terminal output.
+2. Missing Dependencies: If icons do not appear, run npm install lucide-react again.
+3. Tailwind Styles Not Loading: Ensure tailwind.config.js is in the root directory and contains the correct content paths.
 
+Security Confirmation
+1. No Secrets: We confirm that no API keys, private tokens, or sensitive credentials have been committed to this repository.
+2. Integrity: All security protocols displayed (PQC, Blockchain) are simulated to demonstrate the architectural logic.
 
-Technical Architecture:                                                                                                                                                  
-1.The system follows a microservices-based, cloud-native design:                                                                                                    
-2.Ingestion Layer: Edge Agents collect telemetry and network traffic patterns.                                                                                         
-3.Intelligence Layer (The Brain): TensorFlow and PyTorch models analyze traffic for behavioral anomalies.                                                                
-4.Governance Layer: A Hyperledger-backed ledger stores hashes of all security logs.                                                                                
-5.Control Layer: A Go-based Command and Control (C2) server orchestrates Self-Healing responses.
-
-
-Visualization Layer: A React-powered National Security Dashboard for real-time monitoring.
-
-
-Tech Stack:                                                                                                                                                               
-1.Backend: Golang for the high-performance API and Node.js for real-time WebSockets.                                                                                       
-2.Frontend: React.js and Tailwind CSS for the user interface.                                                                                                               
-3.AI/ML: Python and TensorFlow for anomaly detection models.                                                                                                               
-4.Security: liboqs and CRYSTALS-Kyber for post-quantum algorithms.                                                                                                        
-5.Database/DLT: MongoDB for metadata and Hyperledger Fabric for immutable logs.                                                                                              
-6.DevOps: Docker and Kubernetes for container orchestration and self-healing.
-
-
-Installation and Setup:
-1.Prerequisites
-2.Docker and Kubernetes Cluster (Minikube or K3s)
-
-
-Python 3.10+
-
-Go 1.21+
-
-Step 1: Clone the Repository
-git clone https://github.com/your-team/aegis-q.git cd aegis-q
-
-Step 2: Deploy the AI Intelligence Engine
-cd ai-brain pip install -r requirements.txt python main.py --mode=train
-
-Step 3: Launch the Cloud Engine (Backend)
-cd cloud-engine go build -o main . ./main
-
-Step 4: Start the Security Dashboard
-cd dashboard npm install npm start
